@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section>
+    <header>
+        <a href="#" class="logo">ME</a>
+        <div class="toggle" onclick="menuToggle();"></div>
+    </header>
+    <div class="glass"></div>
+    <div class="content">
+     <h2>Heyy Amigos...
+      <span>My name is xyz. I'm a student</span>
+    </h2> 
+    </div>
+    <video src="me.mp4" autoplay muted loop></video>
+    <ul class="sci">
+      <li style="--i:1"><a href="#">Github</a></li>
+      <li style="--i:2"><a href="#">LinkedIn</a></li>
+      <li style="--i:3"><a href="#">Instagram</a></li>
+      <li style="--i:4"><a href="#">Blog</a></li>
+    </ul>
+    <ul class="navigation" style="text-align: center;">
+    <li style="--i:1"><a href="#">About</a></li>
+    <li style="--i:2"><a href="#">Project</a></li>
+    <li style="--i:3"><a href="#">Skills</a></li>
+    <li style="--i:4"><a href="#">Download Resume</a></li>
+    <li style="--i:5"><a href="#">Contact me</a></li>
+    </ul>
+</section>
+<script type="text/javascript">
+  function menuToggle(){
+    const toggleMenu=document.querySelector('.toggle');
+    const section=document.querySelector('section');
+    toggleMenu.classList.toggle('active');
+    section.classList.toggle('active');
+  }
+</script>
+</body>
+</html>
+
